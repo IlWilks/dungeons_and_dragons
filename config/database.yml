@@ -23,13 +23,21 @@ default: &default
 
 development:
   <<: *default
+<<<<<<< HEAD
   database: d_and_d_development
+=======
+  database: dungeons_and_dragons_development
+>>>>>>> 51ed462d24cf5ec54ddc237db00a423adc1fa547
 
   # The specified database role being used to connect to postgres.
   # To create additional roles in postgres see `$ createuser --help`.
   # When left blank, postgres will use the default role. This is
   # the same name as the operating system user that initialized the database.
+<<<<<<< HEAD
   #username: d_and_d
+=======
+  #username: dungeons_and_dragons
+>>>>>>> 51ed462d24cf5ec54ddc237db00a423adc1fa547
 
   # The password associated with the postgres role (username).
   #password:
@@ -57,7 +65,11 @@ development:
 # Do not set this db to the same as development or production.
 test:
   <<: *default
+<<<<<<< HEAD
   database: d_and_d_test
+=======
+  database: dungeons_and_dragons_test
+>>>>>>> 51ed462d24cf5ec54ddc237db00a423adc1fa547
 
 # As with config/credentials.yml, you never want to store sensitive information,
 # like your database password, in your source code. If your source code is
@@ -80,6 +92,12 @@ test:
 #
 production:
   <<: *default
+<<<<<<< HEAD
   database: d_and_d_production
   username: d_and_d
   password: <%= ENV['D_AND_D_DATABASE_PASSWORD'] %>
+=======
+  database: dungeons_and_dragons_production
+  username: dungeons_and_dragons
+  password: <%= ENV['DUNGEONS_AND_DRAGONS_DATABASE_PASSWORD'] %>
+>>>>>>> 51ed462d24cf5ec54ddc237db00a423adc1fa547
